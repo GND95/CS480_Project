@@ -68,7 +68,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox2.Location = new System.Drawing.Point(3, 106);
+            this.textBox2.Location = new System.Drawing.Point(3, 85);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -80,7 +80,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.radioButton2.Location = new System.Drawing.Point(292, 112);
+            this.radioButton2.Location = new System.Drawing.Point(292, 91);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(91, 30);
             this.radioButton2.TabIndex = 3;
@@ -92,7 +92,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox3.Location = new System.Drawing.Point(3, 201);
+            this.textBox3.Location = new System.Drawing.Point(3, 159);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -104,7 +104,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.radioButton3.Location = new System.Drawing.Point(292, 217);
+            this.radioButton3.Location = new System.Drawing.Point(292, 175);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(91, 30);
             this.radioButton3.TabIndex = 5;
@@ -116,7 +116,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox4.Location = new System.Drawing.Point(3, 322);
+            this.textBox4.Location = new System.Drawing.Point(3, 236);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -128,7 +128,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.radioButton4.Location = new System.Drawing.Point(292, 328);
+            this.radioButton4.Location = new System.Drawing.Point(292, 242);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(91, 30);
             this.radioButton4.TabIndex = 7;
@@ -140,18 +140,18 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox5.Location = new System.Drawing.Point(36, 471);
+            this.textBox5.Location = new System.Drawing.Point(3, 316);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(283, 73);
+            this.textBox5.Size = new System.Drawing.Size(421, 73);
             this.textBox5.TabIndex = 8;
             this.textBox5.Text = "Other (Write in below, including your name)";
             // 
             // mailButton
             // 
             this.mailButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.mailButton.Location = new System.Drawing.Point(352, 550);
+            this.mailButton.Location = new System.Drawing.Point(352, 395);
             this.mailButton.Name = "mailButton";
             this.mailButton.Size = new System.Drawing.Size(72, 142);
             this.mailButton.TabIndex = 10;
@@ -162,17 +162,18 @@
             // emailBody
             // 
             this.emailBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.emailBody.Location = new System.Drawing.Point(3, 550);
+            this.emailBody.Location = new System.Drawing.Point(3, 395);
             this.emailBody.Name = "emailBody";
             this.emailBody.Size = new System.Drawing.Size(343, 142);
             this.emailBody.TabIndex = 11;
             this.emailBody.Text = "Describe your issue";
+            this.emailBody.Click += new System.EventHandler(this.emailBody_Click);
             // 
             // mainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 704);
+            this.ClientSize = new System.Drawing.Size(425, 542);
             this.Controls.Add(this.emailBody);
             this.Controls.Add(this.mailButton);
             this.Controls.Add(this.textBox5);

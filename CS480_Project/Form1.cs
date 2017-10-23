@@ -15,14 +15,16 @@ namespace CS480_Project
 {
     public partial class mainMenuForm : Form
     {
+        bool clicked = false; //used to clear the text in the email section the first time the user clicks here
+
         public mainMenuForm()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            interneForm netForm = new interneForm();
+            internetForm netForm = new internetForm();
             netForm.Show();
             this.Hide();
         }
@@ -65,6 +67,15 @@ namespace CS480_Project
             {
                 MessageBox.Show("Email could not be sent. Please call technology or submit a support ticket.", "Error");
             }
+        }
+
+        private void emailBody_Click(object sender, EventArgs e)
+        {
+            if (clicked == false) //prevent multiple clicks in the email text section from reseting the text
+            {
+                emailBody.Text = "";
+            }
+            clicked = true;
         }
     }
 }

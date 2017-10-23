@@ -10,38 +10,31 @@ using System.Windows.Forms;
 
 namespace CS480_Project
 {
-    public partial class smartBoardForm : Form
+    public partial class blockedWebsiteForm : Form
     {
-        public smartBoardForm()
+        public blockedWebsiteForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            mainMenuForm MM = new mainMenuForm();
-            this.Hide();
-            MM.Show();
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            Noninteractive NI = new Noninteractive();
-            NI.Show();
+            internetForm netForm = new internetForm();
+            netForm.Show();
             this.Hide();
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            Markers mark = new Markers();
-            mark.Show();
+            categorizedWebsite CW = new categorizedWebsite();
+            CW.Show();
             this.Hide();
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            Reorient re = new Reorient();
-            re.Show();
+            linkShorteners LS = new linkShorteners();
+            LS.Show();
             this.Hide();
         }
     }
