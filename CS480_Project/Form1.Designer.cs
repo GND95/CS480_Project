@@ -39,6 +39,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.mailButton = new System.Windows.Forms.Button();
             this.emailBody = new System.Windows.Forms.RichTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -139,21 +141,21 @@
             // 
             // textBox5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.textBox5.Location = new System.Drawing.Point(3, 316);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(421, 73);
             this.textBox5.TabIndex = 8;
-            this.textBox5.Text = "Other (Write in below, including your name)";
+            this.textBox5.Text = "Other (Write in below and select your name from the drop-down dialog box)";
             // 
             // mailButton
             // 
             this.mailButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.mailButton.Location = new System.Drawing.Point(352, 395);
+            this.mailButton.Location = new System.Drawing.Point(303, 611);
             this.mailButton.Name = "mailButton";
-            this.mailButton.Size = new System.Drawing.Size(72, 142);
+            this.mailButton.Size = new System.Drawing.Size(121, 68);
             this.mailButton.TabIndex = 10;
             this.mailButton.Text = "Send";
             this.mailButton.UseVisualStyleBackColor = true;
@@ -164,16 +166,37 @@
             this.emailBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.emailBody.Location = new System.Drawing.Point(3, 395);
             this.emailBody.Name = "emailBody";
-            this.emailBody.Size = new System.Drawing.Size(343, 142);
+            this.emailBody.Size = new System.Drawing.Size(294, 284);
             this.emailBody.TabIndex = 11;
             this.emailBody.Text = "Describe your issue";
             this.emailBody.Click += new System.EventHandler(this.emailBody_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(303, 441);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label1.Location = new System.Drawing.Point(303, 409);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 24);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Select Name:";
             // 
             // mainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 542);
+            this.ClientSize = new System.Drawing.Size(428, 682);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.emailBody);
             this.Controls.Add(this.mailButton);
             this.Controls.Add(this.textBox5);
@@ -205,6 +228,8 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button mailButton;
         private System.Windows.Forms.RichTextBox emailBody;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
