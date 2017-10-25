@@ -28,21 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(410, 86);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Go to msn.com and make sure you are signed in/authenticated to the network.";
             // 
             // textBox2
             // 
@@ -66,14 +55,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(410, 86);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "Go to http://www.pbs.org/ and make sure you are signed in/authenticated to the ne" +
+    "twork.";
+            this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);
+            // 
             // categorizedWebsite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 277);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Name = "categorizedWebsite";
             this.Text = "Website is categorized as ...";
             this.ResumeLayout(false);
@@ -82,9 +83,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

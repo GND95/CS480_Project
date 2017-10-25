@@ -23,5 +23,10 @@ namespace CS480_Project
             netForm.Show();
             this.Hide();
         }
+
+        private void richTextBox1_LinkClicked(object sender, LinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(e.LinkText); //event to make the hyperlink work
+        }
     }
 }

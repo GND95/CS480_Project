@@ -59,7 +59,7 @@ namespace CS480_Project
             smtp.UseDefaultCredentials = false;
             NetworkCredential nc = new NetworkCredential("gdcs480project@gmail.com", "randomp455w0rd123!"); //username and password to the account that the emails originate from
             smtp.Credentials = nc;
-            smtp.EnableSsl = true;
+            smtp.EnableSsl = true;            
             if (comboBox1.SelectedItem == null)
             {
                 MessageBox.Show("Please select your name.", "Error");

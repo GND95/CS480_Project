@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -47,17 +47,6 @@
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(409, 76);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Go to msn.com and make sure you are signed in/authenticated to the network.";
             // 
             // textBox2
             // 
@@ -117,17 +106,29 @@
             this.textBox6.Text = "If there is a red \"X\" in the bottom right-hand corner, check the back of your com" +
     "puter to make sure the cable for the internet hasn\'t come unplugged.";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(409, 76);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "Go to http://www.pbs.org/ and make sure you are signed in/authenticated to the ne" +
+    "twork.";
+            this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);
+            // 
             // noInternetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 706);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "noInternetForm";
             this.Text = "No Internet Pages Loading";
@@ -139,11 +140,11 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
