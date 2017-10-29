@@ -46,7 +46,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox1.Location = new System.Drawing.Point(3, 12);
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -58,7 +58,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.radioButton1.Location = new System.Drawing.Point(292, 28);
+            this.radioButton1.Location = new System.Drawing.Point(303, 12);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(91, 30);
             this.radioButton1.TabIndex = 1;
@@ -70,7 +70,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox2.Location = new System.Drawing.Point(3, 85);
+            this.textBox2.Location = new System.Drawing.Point(3, 55);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -82,7 +82,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.radioButton2.Location = new System.Drawing.Point(292, 91);
+            this.radioButton2.Location = new System.Drawing.Point(303, 63);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(91, 30);
             this.radioButton2.TabIndex = 3;
@@ -94,7 +94,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox3.Location = new System.Drawing.Point(3, 159);
+            this.textBox3.Location = new System.Drawing.Point(3, 107);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -106,7 +106,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.radioButton3.Location = new System.Drawing.Point(292, 175);
+            this.radioButton3.Location = new System.Drawing.Point(303, 113);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(91, 30);
             this.radioButton3.TabIndex = 5;
@@ -118,7 +118,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.textBox4.Location = new System.Drawing.Point(3, 236);
+            this.textBox4.Location = new System.Drawing.Point(3, 159);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -130,7 +130,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.radioButton4.Location = new System.Drawing.Point(292, 242);
+            this.radioButton4.Location = new System.Drawing.Point(303, 169);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(91, 30);
             this.radioButton4.TabIndex = 7;
@@ -142,7 +142,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.textBox5.Location = new System.Drawing.Point(3, 316);
+            this.textBox5.Location = new System.Drawing.Point(3, 211);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -153,7 +153,7 @@
             // mailButton
             // 
             this.mailButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.mailButton.Location = new System.Drawing.Point(303, 611);
+            this.mailButton.Location = new System.Drawing.Point(303, 506);
             this.mailButton.Name = "mailButton";
             this.mailButton.Size = new System.Drawing.Size(121, 68);
             this.mailButton.TabIndex = 10;
@@ -164,7 +164,7 @@
             // emailBody
             // 
             this.emailBody.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.emailBody.Location = new System.Drawing.Point(3, 395);
+            this.emailBody.Location = new System.Drawing.Point(3, 290);
             this.emailBody.Name = "emailBody";
             this.emailBody.Size = new System.Drawing.Size(294, 284);
             this.emailBody.TabIndex = 11;
@@ -175,7 +175,7 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(303, 441);
+            this.comboBox1.Location = new System.Drawing.Point(303, 336);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 12;
@@ -184,7 +184,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(303, 409);
+            this.label1.Location = new System.Drawing.Point(303, 304);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 24);
             this.label1.TabIndex = 13;
@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 682);
+            this.ClientSize = new System.Drawing.Size(428, 580);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.emailBody);

@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>4. If you're on a laptop, check both sides of the laptop for a switch that enables / disables the wireless internet on the laptop. If you find a switch, check to make sure the switch is not set to disable for the wireless.</value>
+  </data>
+  <data name="textBox7.Text" xml:space="preserve">
+    <value>5. If you're using a laptop, check to see if the keyboard function keys (F1-F12) have a wireless icon (it is usually an antenna icon). If it has this antenna icon, hold the FN key down (it is typically between left ctrl and left alt on your keyboard) and press the corresponding function key (F1-F12) that has the antenna icon.</value>
+  </data>
 </root>
