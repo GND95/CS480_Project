@@ -170,7 +170,7 @@
             this.emailBody.Name = "emailBody";
             this.emailBody.Size = new System.Drawing.Size(294, 284);
             this.emailBody.TabIndex = 11;
-            this.emailBody.Text = "Describe your issue";
+            this.emailBody.Text = "Describe your issue here";
             this.emailBody.Click += new System.EventHandler(this.emailBody_Click);
             // 
             // comboBox1

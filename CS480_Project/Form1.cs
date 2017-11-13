@@ -61,10 +61,21 @@ namespace CS480_Project
             smtp.UseDefaultCredentials = false;
             NetworkCredential nc = new NetworkCredential("gdcs480project@gmail.com", "randomp455w0rd123!"); //username and password to the account that the emails originate from
             smtp.Credentials = nc;
-            smtp.EnableSsl = true;            
-            if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
+            smtp.EnableSsl = true;
+
+            if (emailBody.Text == "Describe your issue here")
             {
-                MessageBox.Show("Please select your name and a priority level.", "Error");
+                MessageBox.Show("Please describe your issue.", "Error");
+            }
+
+            else if (comboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a priority level.", "Error");
+            }
+
+            else if (comboBox1.SelectedItem == null)
+            {
+                MessageBox.Show("Please select your name.", "Error");
             }
             else
             {
