@@ -21,6 +21,7 @@ namespace CS480_Project
         {
             InitializeComponent();
             comboBox1.Items.AddRange(new string[] { "Cathryn Firmin", "Kassy Forrest", "Leon Foster", "Peggy Giles", "Shauna Hext", "Jasmine Kimball", "Karissa Peyton", "Sherie Sayer", "Darcey Walters", "Aggie Whittle" }); //random names created by an online random name generator
+            comboBox2.Items.AddRange(new string[] { "1 (Least Urgent)", "2 (Low Urgency)", "3 (Medium Urgency)", "4 (High Urgency)", "5 (Most Urgent)" });
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -53,16 +54,17 @@ namespace CS480_Project
 
         private void mailButton_Click(object sender, EventArgs e) //code to make the email section work
         {
-            string emailSubject = this.comboBox1.GetItemText(this.comboBox1.SelectedItem); //use this to get the teacher name so that it will be included in the subject field of the email          
-            MailMessage email = new MailMessage("gdcs480project@gmail.com", "garrettdeblois13@yahoo.com", "Support, " +emailSubject, emailBody.Text.ToString()); //originating email address, target email address, email subject field, email body field
+            string emailSubject = this.comboBox1.GetItemText(this.comboBox1.SelectedItem); //use this to get the teacher name so that it will be included in the subject field of the email  
+            string emailPriorityLevel = this.comboBox2.GetItemText(this.comboBox2.SelectedItem); //use this to get the priority level to include in the email subject
+            MailMessage email = new MailMessage("gdcs480project@gmail.com", "garrettdeblois13@yahoo.com", "Support, " + "Priority level: " + emailPriorityLevel + ", " + emailSubject, emailBody.Text.ToString()); //originating email address, target email address, email subject field, email body field
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             smtp.UseDefaultCredentials = false;
             NetworkCredential nc = new NetworkCredential("gdcs480project@gmail.com", "randomp455w0rd123!"); //username and password to the account that the emails originate from
             smtp.Credentials = nc;
             smtp.EnableSsl = true;            
-            if (comboBox1.SelectedItem == null)
+            if (comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
             {
-                MessageBox.Show("Please select your name.", "Error");
+                MessageBox.Show("Please select your name and a priority level.", "Error");
             }
             else
             {
@@ -75,7 +77,7 @@ namespace CS480_Project
                 }
                 catch (System.Net.Mail.SmtpException)
                 {
-                    MessageBox.Show("Email could not be sent. Please call technology or submit a support ticket.", "Error");
+                    MessageBox.Show("Email could not be sent. Please call or email technology.", "Error");
                 }
             }
         }
