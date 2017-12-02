@@ -44,5 +44,10 @@ namespace CS480_Project
             noNetForm.Show();
             this.Hide();
         }
+
+        private void internetForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); //keep unused background processes of this program from piling up
+        }
     }
 }

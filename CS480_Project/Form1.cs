@@ -63,16 +63,14 @@ namespace CS480_Project
             smtp.Credentials = nc;
             smtp.EnableSsl = true;
 
-            if (emailBody.Text == "Describe your issue here")
+            if (emailBody.Text == "Describe your issue here" || emailBody.Text == "")
             {
                 MessageBox.Show("Please describe your issue.", "Error");
             }
-
             else if (comboBox2.SelectedItem == null)
             {
                 MessageBox.Show("Please select a priority level.", "Error");
             }
-
             else if (comboBox1.SelectedItem == null)
             {
                 MessageBox.Show("Please select your name.", "Error");
@@ -100,6 +98,18 @@ namespace CS480_Project
                 emailBody.Text = "";
             }
             clicked = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {            
+            StaffDirectory directory = new StaffDirectory();
+            directory.Show();
+            this.Hide();
+        }
+
+        private void mainMenuForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); //keep unused background processes of this program from piling up
         }
     }
 }

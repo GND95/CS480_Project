@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(printerForm));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -37,9 +38,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.button1.Location = new System.Drawing.Point(307, 245);
+            this.button1.Location = new System.Drawing.Point(460, 377);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 60);
+            this.button1.Size = new System.Drawing.Size(172, 92);
             this.button1.TabIndex = 0;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,48 +50,54 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.textBox1.Location = new System.Drawing.Point(13, 12);
+            this.textBox1.Location = new System.Drawing.Point(20, 18);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(409, 43);
+            this.textBox1.Size = new System.Drawing.Size(612, 64);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Unplug the printer and plug it back in.";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.textBox2.Location = new System.Drawing.Point(13, 78);
+            this.textBox2.Location = new System.Drawing.Point(20, 120);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(409, 40);
+            this.textBox2.Size = new System.Drawing.Size(612, 59);
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Restart your computer.";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.textBox3.Location = new System.Drawing.Point(13, 147);
+            this.textBox3.Location = new System.Drawing.Point(20, 226);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(409, 92);
+            this.textBox3.Size = new System.Drawing.Size(612, 139);
             this.textBox3.TabIndex = 3;
             this.textBox3.Text = "Move the USB cable for the printer to a different port. Use a port that isn\'t blu" +
     "e and is not labeled with \"SS\" on it.";
             // 
             // printerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 313);
+            this.ClientSize = new System.Drawing.Size(651, 482);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "printerForm";
             this.Text = "Printer/Scanner Issue";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.printerForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

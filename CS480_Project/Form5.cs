@@ -23,5 +23,10 @@ namespace CS480_Project
             this.Hide();
             MM.Show();
         }
+
+        private void soundForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); //keep unused background processes of this program from piling up
+        }
     }
 }

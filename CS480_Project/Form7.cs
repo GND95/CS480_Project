@@ -28,5 +28,10 @@ namespace CS480_Project
         {
             System.Diagnostics.Process.Start(e.LinkText); //event to make the hyperlink work
         }
+
+        private void noInternetForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); //keep unused background processes of this program from piling up
+        }
     }
 }

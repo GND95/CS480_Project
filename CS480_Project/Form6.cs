@@ -37,5 +37,10 @@ namespace CS480_Project
             LS.Show();
             this.Hide();
         }
+
+        private void blockedWebsiteForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); //keep unused background processes of this program from piling up
+        }
     }
 }
