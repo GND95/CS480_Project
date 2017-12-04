@@ -29,7 +29,8 @@ namespace CS480_Project
             // TODO: This line of code loads data into the 'appData.Employees' table.
             this.employeesTableAdapter.Fill(this.appData.Employees);
             employeesBindingSource.DataSource = this.appData.Employees;
-            dataGridView1.ReadOnly = true;
+            dataGridView1.ReadOnly = true;           
+            this.dataGridView1.Sort(this.dataGridView1.Columns[1], ListSortDirection.Ascending);//open the form with the data sorted by phone extensions
         }
 
         private void btnNew_Click(object sender, EventArgs e)

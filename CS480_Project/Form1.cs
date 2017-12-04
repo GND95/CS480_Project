@@ -15,12 +15,12 @@ namespace CS480_Project
 {
     public partial class mainMenuForm : Form
     {
-        bool clicked = false; //used to clear the text in the email section the first time the user clicks here       
+        bool emailClicked = false; //used to clear the text in the email section the first time the user clicks here  
+        bool nameClicked = false; //used to clear the text in the name section the first time the user clicks here
 
         public mainMenuForm()
         {
-            InitializeComponent();
-            comboBox1.Items.AddRange(new string[] { "Cathryn Firmin", "Kassy Forrest", "Leon Foster", "Peggy Giles", "Shauna Hext", "Jasmine Kimball", "Karissa Peyton", "Sherie Sayer", "Darcey Walters", "Aggie Whittle" }); //random names created by an online random name generator
+            InitializeComponent();            
             comboBox2.Items.AddRange(new string[] { "1 (Least Urgent)", "2 (Low Urgency)", "3 (Medium Urgency)", "4 (High Urgency)", "5 (Most Urgent)" });
         }
 
@@ -54,7 +54,7 @@ namespace CS480_Project
 
         private void mailButton_Click(object sender, EventArgs e) //code to make the email section work
         {
-            string emailSubject = this.comboBox1.GetItemText(this.comboBox1.SelectedItem); //use this to get the teacher name so that it will be included in the subject field of the email  
+            string emailSubject = nameBox.Text; //use this to get the teacher name so that it will be included in the subject field of the email  
             string emailPriorityLevel = this.comboBox2.GetItemText(this.comboBox2.SelectedItem); //use this to get the priority level to include in the email subject
             MailMessage email = new MailMessage("gdcs480project@gmail.com", "garrettdeblois13@yahoo.com", "Support, " + "Priority level: " + emailPriorityLevel + ", " + emailSubject, emailBody.Text.ToString()); //originating email address, target email address, email subject field, email body field
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
@@ -71,9 +71,9 @@ namespace CS480_Project
             {
                 MessageBox.Show("Please select a priority level.", "Error");
             }
-            else if (comboBox1.SelectedItem == null)
+            else if (nameBox.Text == "" || nameBox.Text == "Please enter your name")
             {
-                MessageBox.Show("Please select your name.", "Error");
+               MessageBox.Show("Please enter your name.", "Error");
             }
             else
             {
@@ -93,11 +93,11 @@ namespace CS480_Project
 
         private void emailBody_Click(object sender, EventArgs e)
         {
-            if (clicked == false) //prevent multiple clicks in the email text section from reseting the text
+            if (emailClicked == false) //prevent multiple clicks in the email text section from reseting the text
             {
                 emailBody.Text = "";
             }
-            clicked = true;
+            emailClicked = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -110,6 +110,15 @@ namespace CS480_Project
         private void mainMenuForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit(); //keep unused background processes of this program from piling up
+        }
+
+        private void nameBox_Click(object sender, EventArgs e)
+        {
+            if (nameClicked == false) //prevent multiple clicks in the email text section from reseting the text
+            {
+                nameBox.Text = "";
+            }
+            nameClicked = true;
         }
     }
 }
