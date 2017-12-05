@@ -113,6 +113,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "blockedWebsiteForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Website is Blocked";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.blockedWebsiteForm_FormClosed);
             this.ResumeLayout(false);

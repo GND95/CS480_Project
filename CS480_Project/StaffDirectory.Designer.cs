@@ -382,6 +382,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "StaffDirectory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "StaffDirectory";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.StaffDirectory_FormClosed);
             this.Load += new System.EventHandler(this.StaffDirectory_Load);

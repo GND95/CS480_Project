@@ -268,6 +268,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "mainMenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MainMenu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.mainMenuForm_FormClosed);
             this.ResumeLayout(false);

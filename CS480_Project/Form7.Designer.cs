@@ -171,6 +171,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "noInternetForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "No Internet Pages Loading";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.noInternetForm_FormClosed);
             this.ResumeLayout(false);
