@@ -161,7 +161,7 @@
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(630, 110);
             this.textBox5.TabIndex = 8;
-            this.textBox5.Text = "Other (Write in below and select your name from the drop-down dialog box)";
+            this.textBox5.Text = "Other (Write in below and enter your name into the text box)";
             // 
             // mailButton
             // 
